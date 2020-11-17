@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+}
+#nav{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    line-height: 2rem;
+    background: rgba(18, 18, 22, 0.24);
+    opacity: 0.8;
+}
+#navRight{
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+.navTitle{
+    width: 5rem;
+    height: 2rem;
+    overflow: hidden;
+}
+.navTitle>img{
+    width: 5rem;
+    height: 4rem;
+    vertical-align: top;
+    cursor: pointer;
+}
+#removeBack{
+    width: 5rem;
+    height: 2rem;
+    line-height: 2rem;
+    cursor: pointer;
+}
+.searPos{
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+}
+.searPosSize{
+    width: 40rem;
+    height: 20rem;
+    position: absolute;  
+    /*要有高度才能设置top距离的百分比*/
+    top: 10rem;
+    left: 50%;
+    margin-left: -20rem;
+}
+.wordStyle{
+    letter-spacing: 3rem;
+    /*letter-spacing导致文字无法居中，使用text-indent进行文字缩进*/
+    text-indent: 3rem;   
+    font-size: 4rem;
+}
+.styleFont1{
+    color: rgb(218, 73, 205);
+}
+.styleFont2{
+    color: rgb(139, 235, 49);
+}
+.spsSearch{
+    font-size: 0;    /*使行内元素间距为0*/
+    margin-top: 2rem;
+    line-height: 1.9rem;
+    height: 2.5rem;
+}
+#wordSearch{
+    width: 25rem;
+    height: 2.5rem;
+    /*定义实线，使边界颜色一致*/
+    border-top: 2px solid rgb(0, 153, 255);
+    border-right: none;
+    border-bottom: 2px solid rgb(0, 153, 255);
+    border-left: none;
+    box-sizing: border-box;
+    /*由于input与button不在同一基线上导致高度不同，所以使用垂直对齐*/
+    outline: none;
+}
+.spsSearch>button{
+    width: 4rem;
+    height: 2.5rem;
+    background: #ffffff;
+    outline: none;
+    border:none;
+    border-radius: 0 0.4rem 0.4rem 0;
+    border-color:rgb(0, 153, 255);
+    background: rgb(0, 153, 255);
+    -webkit-border-radius: 0 0.4rem 0.4rem 0;
+    -moz-border-radius: 0 0.4rem 0.4rem 0;
+    -ms-border-radius: 0 0.4rem 0.4rem 0;
+    -o-border-radius: 0 0.4rem 0.4rem 0;
+}
+button:hover{
+    background-color:rgb(5, 128, 211);
+    cursor: pointer;
+}
+.navWord:hover{
+    color: red;
+    cursor: pointer;
+}
+#divSelect{
+    display: inline-block;
+    vertical-align: top;
+    width: 4.5rem;
+    height: 2.5rem;
+    line-height: 2rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    overflow: hidden;
+}
+#wordSelect{
+    display: inline-block;
+    vertical-align: top;
+    height: 2.5rem;
+}
+.showSearch{
+    display: none;
+    box-sizing: border-box;
+    border-left: 2px solid rgb(0, 153, 255);
+    border-right: 2px solid rgb(0, 153, 255);
+    border-bottom: 2px solid rgb(0, 153, 255);
+    border-radius: 0 0 0.4rem 0.4rem;
+    -webkit-border-radius: 0 0 0.4rem 0.4rem;
+    -moz-border-radius: 0 0 0.4rem 0.4rem;
+    -ms-border-radius: 0 0 0.4rem 0.4rem;
+    -o-border-radius: 0 0 0.4rem 0.4rem;
+}
+.ssOn{
+    width: 25rem;
+    line-height: 2rem;
+    font-size: 1rem;
+    text-align: left;
+}
+.ssOn a{
+    text-decoration: none;
+    outline: none;
+    color: #000;
+}
+#pitchP{
+    border-top: 2px solid rgb(0, 153, 255);
+    border-radius: 0.4rem 0 0 0.4rem;
+    -webkit-border-radius: 0.4rem 0 0 0.4rem;
+    -moz-border-radius: 0.4rem 0 0 0.4rem;
+    -ms-border-radius: 0.4rem 0 0 0.4rem;
+    -o-border-radius: 0.4rem 0 0 0.4rem;
+}
+.divSelectP{
+    width: 4.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-bottom: 2px solid rgb(0, 153, 255);
+    border-left: 2px solid rgb(0, 153, 255);
+    background-color: #ffffff;
+}
+.dspOn{
+    border-right: 2px solid rgb(0, 153, 255);
+}
+.navReduction{
+    cursor: pointer;
+}
+.navReduction:hover{
+    color: red;
+}
+#floatUser{
+    right: 10rem;
+    bottom: 10rem;
+    position: fixed;
+}
+#floatUserStyle{
+    width: 4rem;
+    height: 4rem;
+    box-sizing: border-box;
+    line-height: 3.5rem;
+    text-align: center;
+    border: 1px solid rgb(78, 152, 221);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: rgb(135, 135, 241);
+    /*box-shadow: h-shadow v-shadow blur spread color inset;*/
+    box-shadow: 0.1rem 0.2rem 0.5rem rgb(25, 36, 44);
+    cursor: pointer;
+}
+.cUser{
+    width: 3rem;
+    height: 3rem;
+    box-sizing: border-box;
+    font-size: 0.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    border: 1px solid rgb(78, 152, 221);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 0 auto;
+    background-color: rgb(135, 135, 241);
+    box-shadow: 0.1rem 0.1rem 0.5rem rgb(25, 36, 44);
+    opacity: 0;
+    transition: margin-bottom 0.5s linear, opacity 0.5s linear;
+    -webkit-transition: margin-bottom 0.5s linear, opacity 0.5s linear;
+    -moz-transition: margin-bottom 0.5s linear, opacity 0.5s linear;
+    -ms-transition: margin-bottom 0.5s linear, opacity 0.5s linear;
+    -o-transition: margin-bottom 0.5s linear, opacity 0.5s linear;
+    cursor: default;
+}
+.ccOn{
+    opacity: 1;
+    margin-bottom: 1rem;
+}
+#floatUserNews{
+    position: relative;
+}
+#floatUserNewsSon{
+    position: absolute;
+    top: 0;
+    left: 4rem;
+    display: none;
+}

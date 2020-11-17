@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#divLogin{
+    width: 25%;
+    margin: 10rem auto;
+}
+#subButton{
+    width: 6rem;
+    margin-bottom: 1rem;
+}
+legend{
+    font-weight:bold;
+    color:#777;
+}
+input{
+    font: inherit;
+    width: 50%;
+    box-sizing: border-box;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+    transition: width 0.5s;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
+    -webkit-transition: width 0.5s;
+    -moz-transition: width 0.5s;
+    -ms-transition: width 0.5s;
+    -o-transition: width 0.5s;
+    -webkit-appearance:none;                /*ios去掉系统默认边框和内阴影*/
+}
+input:focus{
+    width: 60%;
+    outline: none;
+    box-shadow:0 0 .5rem rgba(93, 162, 248, 0.5);
+    border-color: rgb(105, 105, 235);
+}
+#divLoginOut{
+    margin: 0 auto;
+}
+.divLoginIn{
+    margin-top: 1.5rem;
+    color:#777;
+    text-align: center;
+}
+#divFooter{
+    display: flex;
+    justify-content: space-around;
+    font-size: small;
+}
+#myCanvas{
+    box-sizing: border-box;
+    display: block;   /*为了使画布水平居中*/
+    margin: 0 auto;
+}
+.inputErr{
+    box-shadow:0 0 .5rem rgba(93, 162, 248, 0.5);
+    border-color: rgb(241, 45, 61);
+}
