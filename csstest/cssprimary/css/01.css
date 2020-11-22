@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation: myName 4s infinite alternate;  
+    -webkit-animation: myName 4s infinite alternate;
+}
+@keyframes myName{
+    0%{
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+    25%{
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+    50%{
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+    75%{
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+    100%{
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
