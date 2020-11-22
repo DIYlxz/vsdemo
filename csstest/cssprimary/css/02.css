@@ -1,0 +1,35 @@
+div{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: red;
+    text-align: center;
+    line-height: 100px;
+    position: relative;
+    animation: myAnimation 5s infinite;
+    -webkit-animation: myAnimation 5s infinite;
+}
+@keyframes myAnimation{
+    0%{
+        left: 0;
+        top: 0;
+    }
+    50%{
+        left: 400px;
+        top: 0;
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+    100%{
+        left: 0;
+        top: 0;
+    }
+}
