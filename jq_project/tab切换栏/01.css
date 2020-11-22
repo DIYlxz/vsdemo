@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#tatol{
+    width: 60%;
+    margin: 10px auto;
+}
+#tab{
+    display: flex;
+}
+#tab>div{
+    width: 10%;
+    text-align: center;
+    box-sizing: border-box;
+    border:1px solid black;
+    padding:5px;
+    cursor: pointer;
+}
+.tab_item{
+    display: none;
+}
+.on{
+    background: brown;
+}

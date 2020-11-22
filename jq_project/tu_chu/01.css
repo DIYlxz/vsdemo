@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#tuChu{
+    width: 80%;
+    margin:0 auto;
+}
+.tuchu_body{
+    display: flex;
+    justify-content: space-between;
+}
+.tuchu_body>div{
+    width: 30%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+.text_color{
+    color:red;
+}

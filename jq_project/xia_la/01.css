@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.head{
+    display: flex;
+    justify-content: left;
+}
+ul{
+    list-style: none;
+    background-color: aqua;
+}
+#li_style_one,#li_style_two{
+    display: none;
+}

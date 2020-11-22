@@ -1,0 +1,14 @@
+$(function(){
+    $('#btn_all_right').click(function(){
+        $('option:selected').appendTo('#last_se');
+    })
+    $('#btn_all_left').click(function(){
+        $('option:selected').appendTo('#head_se');
+    })
+    $('#btn_singler').click(function(){
+        $('option').appendTo('#last_se');
+    })
+    $('#btn_singlel').click(function(){
+        $('option').appendTo('#head_se');
+    })
+})

@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#contect{
+    display: flex;
+    width: 310px;
+    height: 200px;
+    text-align: center;
+    margin: 10px auto;
+    box-sizing: border-box;
+    border:1px solid black;
+}
+.within{
+    display: flex;
+    box-sizing: border-box;
+    border:1px solid black;
+}
+.within>div{
+    line-height: 200px;
+}
+.sub{
+    width: 50px;
+}
+.hide_sub{
+    display: none;
+    width:100px;
+}
